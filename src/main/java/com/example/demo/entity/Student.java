@@ -31,5 +31,12 @@ public class Student{
         this.cgpa=cgpa;
     }
 
+    public Student(Long id, String stuname, String stemail, float cgpa) {
+        this.id = id;
+        this.stuname = stuname;
+        this.stemail = stemail;
+        this.cgpa = cgpa;
+    }
+
 
 }
