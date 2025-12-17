@@ -32,7 +32,11 @@ public class StudentController {
          return stser.fetchDataById(id);
     }
     @PutMapping("/updatedata/{id}")
-    public  fetchDataById(@PathVariable int id,@RequestBody Student stu){
+    public  String fetchDataById(@PathVariable int id,@RequestBody Student stu){
+     stu.setId(id);
+     stuser.createData(stu);
+     return "Data updation done!!!";
+
 
     }
    
