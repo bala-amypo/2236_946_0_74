@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.demo.entity.Student;
 import com.example.demo.repository.StudentRepository;
-@service
+@Service
 public class StudentServiceImplementation implements StudentService{
 @Autowired
 StudentRepository repo;
