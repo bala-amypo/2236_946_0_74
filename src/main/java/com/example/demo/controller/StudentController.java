@@ -2,4 +2,8 @@ package com.example.demo.controller;
 
 
 
-@Rest
+@RestController
+
+public class StudentController{
+    @PostMapping
+}
