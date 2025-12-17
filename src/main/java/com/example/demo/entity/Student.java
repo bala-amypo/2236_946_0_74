@@ -7,6 +7,7 @@ public class Student{
     private String stuname;
     private String stuemail;
     private float cgpa;
+    
     public Long getId(){
         return id;
     }
