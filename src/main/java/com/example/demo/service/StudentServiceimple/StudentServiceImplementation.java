@@ -11,9 +11,11 @@ import com.example.demo.repository.StudentRepository;
 public class StudentServiceImplementation implements StudentService{
 @Autowired
 StudentRepository repo;
+@override
     public Student createData(Student stu){
         return repo.save(stu);
     }
+@override
     public List<Student> fetchRecord(){
         return repo.findAll();
     }
