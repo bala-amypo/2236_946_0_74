@@ -1,4 +1,4 @@
-package com.example.demo.service.StudentServiceimple;
+package com.example.demo.service;
 
 import java.util.List;
 
@@ -11,11 +11,11 @@ import com.example.demo.repository.StudentRepository;
 public class StudentServiceImplementation implements StudentService{
 @Autowired
 StudentRepository repo;
-@override
+@Override
     public Student createData(Student stu){
         return repo.save(stu);
     }
-@override
+@Override
     public List<Student> fetchRecord(){
         return repo.findAll();
     }
