@@ -19,4 +19,7 @@ StudentRepository repo;
     public List<Student> fetchRecord(){
         return repo.findAll();
     }
+public  fetchDataById(Long id){
+    
+}
 }
