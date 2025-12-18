@@ -40,6 +40,7 @@ public class StudentController {
       else{
         return id+" not found";
       }
+      }
 
 
       @DeleteMapping("/deletedata/{id}")
