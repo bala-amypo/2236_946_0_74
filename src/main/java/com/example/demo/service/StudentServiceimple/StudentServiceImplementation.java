@@ -19,7 +19,12 @@ StudentRepository repo;
     public List<Student> fetchRecord(){
         return repo.findAll();
     }
+@Override
 public Optional<Student> fetchDataById(Long id){
     return repo.findById(id);
+}
+@Override
+public void deleteData(int id){
+    repo.deleteById(id);
 }
 }
