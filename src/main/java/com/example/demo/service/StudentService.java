@@ -5,5 +5,5 @@ public interface StudentService{
     Student createData(Student stu);
     List<Student> fetchRecord();
     Optional<Student> fetchDataById(Long id);
-    deleteById(Long id);
+    void deleteById(Long id);
 }
